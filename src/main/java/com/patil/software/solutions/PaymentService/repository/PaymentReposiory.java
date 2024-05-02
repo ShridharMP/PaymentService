@@ -7,5 +7,5 @@ import com.patil.software.solutions.PaymentService.entity.TransactionDetails;
 
 @Repository
 public interface PaymentReposiory extends JpaRepository<TransactionDetails, Long>{
-
+	TransactionDetails findByOrderId(long oderId);
 }
